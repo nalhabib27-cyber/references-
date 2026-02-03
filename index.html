@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مراجع سوق مراكز البيانات | Data Center Market References</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #fff;
+            line-height: 1.8;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 30px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+        
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            color: #a0a0a0;
+            font-size: 1.1em;
+        }
+        
+        .section {
+            background: rgba(255,255,255,0.03);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        
+        h2 {
+            color: #00d4ff;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(0,212,255,0.3);
+        }
+        
+        .reference-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-right: 4px solid #00d4ff;
+        }
+        
+        .reference-card.primary {
+            border-right-color: #00ff88;
+            background: rgba(0,255,136,0.05);
+        }
+        
+        .reference-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        
+        .reference-org {
+            color: #00d4ff;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .reference-details {
+            color: #b0b0b0;
+            font-size: 0.95em;
+            margin-bottom: 15px;
+        }
+        
+        .reference-link {
+            display: inline-block;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .reference-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0,212,255,0.4);
+        }
+        
+        .data-match {
+            display: inline-block;
+            background: #00ff88;
+            color: #1a1a2e;
+            padding: 3px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .quote {
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            font-style: italic;
+            border-right: 3px solid #7b2cbf;
+            color: #d0d0d0;
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .data-table th,
+        .data-table td {
+            padding: 12px 15px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .data-table th {
+            background: rgba(0,212,255,0.2);
+            color: #00d4ff;
+            font-weight: 600;
+        }
+        
+        .data-table tr:nth-child(even) {
+            background: rgba(255,255,255,0.03);
+        }
+        
+        .verified {
+            color: #00ff88;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #606060;
+            font-size: 0.9em;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin: 5px;
+        }
+        
+        .badge-primary {
+            background: rgba(0,255,136,0.2);
+            color: #00ff88;
+            border: 1px solid #00ff88;
+        }
+        
+        .badge-secondary {
+            background: rgba(0,212,255,0.2);
+            color: #00d4ff;
+            border: 1px solid #00d4ff;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.6em;
+            }
+            .container {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>مراجع سوق مراكز البيانات</h1>
+            <p class="subtitle">Data Center Market References & Sources</p>
+            <div style="margin-top: 15px;">
+                <span class="badge badge-primary">مصادر موثقة</span>
+                <span class="badge badge-secondary">بيانات محققة</span>
+            </div>
+        </header>
+
+        <!-- Primary Source -->
+        <section class="section">
+            <h2>📊 المصدر الرئيسي - قيمة السوق</h2>
+            
+            <div class="reference-card primary">
+                <div class="reference-org">Allied Market Research (AMR)</div>
+                <div class="reference-title">Data Center Market Size, Share, Competitive Landscape and Trend Analysis Report</div>
+                <div class="reference-details">
+                    <strong>رمز التقرير:</strong> A13117 | 
+                    <strong>تاريخ النشر:</strong> أغسطس 2021 | 
+                    <strong>الصفحات:</strong> 280
+                </div>
+                <div style="margin: 15px 0;">
+                    <span class="data-match">✓ 2020: $187.35B</span>
+                    <span class="data-match">✓ 2030: $517.17B</span>
+                    <span class="data-match">✓ CAGR: 10.5%</span>
+                </div>
+                <div class="quote">
+                    "The global data center market Size was valued at USD 187.35 billion in 2020, and is projected to reach USD 517.17 billion by 2030, registering a CAGR of 10.5% from 2021 to 2030."
+                </div>
+                <a href="https://www.alliedmarketresearch.com/data-center-market-A13117" target="_blank" class="reference-link">زيارة المصدر ↗</a>
+            </div>
+        </section>
+
+        <!-- Power Capacity Sources -->
+        <section class="section">
+            <h2>⚡ مصادر سعة الطاقة (MW/GW)</h2>
+            
+            <div class="reference-card">
+                <div class="reference-org">JLL (Jones Lang LaSalle)</div>
+                <div class="reference-title">2026 Global Data Center Outlook</div>
+                <div class="reference-details">
+                    تقرير شامل عن توقعات سوق مراكز البيانات العالمي
+                </div>
+                <div style="margin: 15px 0;">
+                    <span class="data-match">✓ 2030: 200 GW</span>
+                </div>
+                <div class="quote">
+                    "By 2030, global data center capacity could reach 200 GW. This rapid growth will be driven largely by hyperscale cloud expansion and AI demand."
+                </div>
+                <a href="https://www.jll.com/en-us/insights/market-outlook/data-center-outlook" target="_blank" class="reference-link">زيارة المصدر ↗</a>
+            </div>
+
+            <div class="reference-card">
+                <div class="reference-org">McKinsey & Company</div>
+                <div class="reference-title">Scaling bigger, faster, cheaper data centers with smarter designs</div>
+                <div class="reference-details">
+                    <strong>تاريخ النشر:</strong> أغسطس 2025
+                </div>
+                <div class="quote">
+                    "The United States alone will need to more than triple its annual power capacity over the next five years—from 25 GW of demand in 2024 to more than 80 GW in 2030. Worldwide demand is expected to be about 220 GW by 2030."
+                </div>
+                <a href="https://www.mckinsey.com/industries/private-capital/our-insights/scaling-bigger-faster-cheaper-data-centers-with-smarter-designs" target="_blank" class="reference-link">زيارة المصدر ↗</a>
+            </div>
+
+            <div class="reference-card">
+                <div class="reference-org">IEA - وكالة الطاقة الدولية</div>
+                <div class="reference-title">Energy and AI: Energy demand from AI</div>
+                <div class="reference-details">
+                    <strong>تاريخ التحديث:</strong> أبريل 2025
+                </div>
+                <div class="quote">
+                    "Global electricity consumption for data centres is projected to double to reach around 945 TWh by 2030, representing just under 3% of total global electricity consumption."
+                </div>
+                <a href="https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai" target="_blank" class="reference-link">زيارة المصدر ↗</a>
+            </div>
+
+            <div class="reference-card">
+                <div class="reference-org">S&P Global</div>
+                <div class="reference-title">Data center grid-power demand forecast</div>
+                <div class="reference-details">
+                    <strong>تاريخ النشر:</strong> أكتوبر 2025
+                </div>
+                <div class="quote">
+                    "Data-center power demand will rise to 134.4 GW in 2030."
+                </div>
+                <a href="https://www.spglobal.com/energy/en/news-research/latest-news/electric-power/101425-data-center-grid-power-demand-to-rise-22-in-2025-nearly-triple-by-2030" target="_blank" class="reference-link">زيارة المصدر ↗</a>
+            </div>
+
+            <div class="reference-card">
+                <div class="reference-org">Goldman Sachs Research</div>
+                <div class="reference-title">AI to drive 165% increase in data center power demand by 2030</div>
+                <div class="reference-details">
+                    <strong>تاريخ النشر:</strong> فبراير 2025
+                </div>
+                <div class="quote">
+                    "Goldman Sachs Research forecasts global power demand from data centers will increase 50% by 2027 and by as much as 165% by the end of the decade."
+                </div>
+                <a href="https://www.goldmansachs.com/insights/articles/ai-to-drive-165-increase-in-data-center-power-demand-by-2030" target="_blank" class="reference-link">زيارة المصدر ↗</a>
+            </div>
+        </section>
+
+        <!-- Summary Table -->
+        <section class="section">
+            <h2>📋 ملخص التحقق من البيانات</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>البيان</th>
+                        <th>القيمة</th>
+                        <th>المصدر</th>
+                        <th>الحالة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>قيمة السوق 2020</td>
+                        <td>$187.35B</td>
+                        <td>Allied Market Research</td>
+                        <td class="verified">✓ مطابق</td>
+                    </tr>
+                    <tr>
+                        <td>قيمة السوق 2030</td>
+                        <td>$517.17B</td>
+                        <td>Allied Market Research</td>
+                        <td class="verified">✓ مطابق</td>
+                    </tr>
+                    <tr>
+                        <td>سعة العرض 2030</td>
+                        <td>200 GW</td>
+                        <td>JLL</td>
+                        <td class="verified">✓ مطابق</td>
+                    </tr>
+                    <tr>
+                        <td>الطلب العالمي 2030</td>
+                        <td>~220 GW</td>
+                        <td>McKinsey</td>
+                        <td class="verified">✓ قريب</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            <p>جميع المصادر موثقة ومتاحة للتحقق</p>
+            <p style="margin-top: 10px; color: #404040;">آخر تحديث: فبراير 2026</p>
+        </footer>
+    </div>
+</body>
+</html>
